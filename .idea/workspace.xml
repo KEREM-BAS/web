@@ -27,7 +27,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "dart.analysis.tool.window.visible": "false",
-    "last_opened_file_path": "C:/Users/KEREM/Desktop/fuedhiclinic/build/web",
+    "last_opened_file_path": "C:/Users/KEREM/Desktop/web",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -40,6 +40,7 @@
       <option name="presentableId" value="Default" />
       <updated>1661359176788</updated>
       <workItem from="1661359177921" duration="25000" />
+      <workItem from="1661360668568" duration="13000" />
     </task>
     <servers />
   </component>
