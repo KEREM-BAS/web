@@ -6,7 +6,7 @@ const RESOURCES = {
   ".git/COMMIT_EDITMSG": "7c897c2167f77748644493434066ae04",
 ".git/config": "e7d47204aece4b9d4b223cec5ad2894a",
 ".git/description": "a0a7c3fff21f2aea3cfa1d0316dd816c",
-".git/FETCH_HEAD": "742e6635b3709625c069bd9f6b3a62c8",
+".git/FETCH_HEAD": "d41d8cd98f00b204e9800998ecf8427e",
 ".git/HEAD": "957b8cd9f48dde82807ba01c3d3ca3a0",
 ".git/hooks/applypatch-msg.sample": "ce562e08d8098926a3862fc6e7905199",
 ".git/hooks/commit-msg.sample": "579a3c1e12a1e74a98169175fb913012",
@@ -49,19 +49,20 @@ const RESOURCES = {
 "assets/assets/images/fuedhilogo.png": "9affc9cbc964413fbf8ac5bbc4400fbe",
 "assets/FontManifest.json": "5a32d4310a6f5d9a6b651e75ba0d7372",
 "assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
-"assets/NOTICES": "cb41bfb8add9d92c8edaa9ceccbb9640",
+"assets/NOTICES": "ab29eefdbd5f6a464d2613d282f13809",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf": "d1722d5cf2c7855862f68edb85e31f88",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf": "613e4cc1af0eb5148b8ce409ad35446d",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf": "dd3c4233029270506ecc994d67785a37",
+"assets/shaders/ink_sparkle.frag": "2ad5fabd6a36a6deff087b8edfd0c1f8",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "0cc3da3761a44ee14efb27be88526ace",
-"/": "0cc3da3761a44ee14efb27be88526ace",
-"main.dart.js": "fd5887c31039af15992de0ee4bbb1d6c",
+"index.html": "f04b83584453b4f7c6f26e56ec9e9105",
+"/": "f04b83584453b4f7c6f26e56ec9e9105",
+"main.dart.js": "0301445228156dfd55ffad67679da416",
 "manifest.json": "4c4e1c2232bb11604884a88a545e40c6",
 "version.json": "ff8625bd1bd1163ace3beed1a0a5c6c5"
 };
@@ -71,7 +72,6 @@ const RESOURCES = {
 const CORE = [
   "main.dart.js",
 "index.html",
-"assets/NOTICES",
 "assets/AssetManifest.json",
 "assets/FontManifest.json"];
 // During install, the TEMP cache is populated with the application shell files.
@@ -170,9 +170,11 @@ self.addEventListener("fetch", (event) => {
     .then((cache) =>  {
       return cache.match(event.request).then((response) => {
         // Either respond with the cached resource, or perform a fetch and
-        // lazily populate the cache.
+        // lazily populate the cache only if the resource was successfully fetched.
         return response || fetch(event.request).then((response) => {
-          cache.put(event.request, response.clone());
+          if (response && Boolean(response.ok)) {
+            cache.put(event.request, response.clone());
+          }
           return response;
         });
       })
