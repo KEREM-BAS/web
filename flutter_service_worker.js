@@ -3,7 +3,8 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "0651f74a28ffb11eda9b67550a22b2d8",
+  "assets/AssetManifest.json": "f45d9b95aed010e859f9c059b8d9540c",
+"assets/assets/images/dhi-steps.png": "f52bb6d946a74c72cf5f576e97ae5397",
 "assets/assets/images/fuedhilogo.png": "9affc9cbc964413fbf8ac5bbc4400fbe",
 "assets/assets/images/Untitled.png": "399d553dcdd03e6321679763d5cf4c6d",
 "assets/assets/images/welcome-to-dental-bosphorus.jpg": "ffe859eaacc78fb5eeef6305128e120e",
@@ -309,9 +310,9 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "0e616e8700986ac1bd3d6b0e735cecd5",
-"/": "0e616e8700986ac1bd3d6b0e735cecd5",
-"main.dart.js": "032141e2797c0bc4becefd2c4cce57dc",
+"index.html": "61821b36c8ff5fb3620ad15e5d7d51cb",
+"/": "61821b36c8ff5fb3620ad15e5d7d51cb",
+"main.dart.js": "50f31bb0b32d1e7b9794c487c9f54de8",
 "manifest.json": "4c4e1c2232bb11604884a88a545e40c6",
 "version.json": "ff8625bd1bd1163ace3beed1a0a5c6c5"
 };
