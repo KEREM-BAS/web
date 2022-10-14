@@ -18,7 +18,7 @@ const RESOURCES = {
 "assets/assets/images/welcome-to-dental-bosphorus.jpg": "ffe859eaacc78fb5eeef6305128e120e",
 "assets/FontManifest.json": "5a32d4310a6f5d9a6b651e75ba0d7372",
 "assets/fonts/MaterialIcons-Regular.otf": "e7069dfd19b331be16bed984668fe080",
-"assets/NOTICES": "653abf51ad14afd91216cb671507c2b1",
+"assets/NOTICES": "aa4ca132c19309661d1880bf30731057",
 "assets/packages/circle_flags/assets/png/ac.png": "7a22b00440fc343886cb7527fae8632f",
 "assets/packages/circle_flags/assets/png/ad.png": "d026729924482a576374e567550f5c14",
 "assets/packages/circle_flags/assets/png/ae.png": "2475bad00ef171913d44e24b91583f8e",
@@ -323,9 +323,9 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "9a413133cf3e2af161caebea393b7dfb",
-"/": "9a413133cf3e2af161caebea393b7dfb",
-"main.dart.js": "2e24254871fd06a6c5d37ed1b89847b5",
+"index.html": "0a5b4b65d5603ad348eeb085ce508e0b",
+"/": "0a5b4b65d5603ad348eeb085ce508e0b",
+"main.dart.js": "ed56e52fc80235bcdc4243125589d6db",
 "manifest.json": "4c4e1c2232bb11604884a88a545e40c6",
 "version.json": "ff8625bd1bd1163ace3beed1a0a5c6c5"
 };
