@@ -3,7 +3,10 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "c6f1843d7f23dc33c457756884e11610",
+  ".idea/modules.xml": "9e76b956e97dbf7d14a4b3d83c8c2375",
+".idea/web.iml": "c5824d95348e32b80a039f88b729eb70",
+".idea/workspace.xml": "c47d3090c17a499d9a588726e14d296b",
+"assets/AssetManifest.json": "c6f1843d7f23dc33c457756884e11610",
 "assets/assets/images/bus.png": "ba92222d512fd6c9ac577e38cbfe5239",
 "assets/assets/images/call-center-service.png": "a46112326ac45339d43117ed6cf43730",
 "assets/assets/images/dhi-steps.png": "f52bb6d946a74c72cf5f576e97ae5397",
@@ -328,9 +331,9 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "9b900d8f34a2122894a93f959c12ad08",
-"/": "9b900d8f34a2122894a93f959c12ad08",
-"main.dart.js": "51ce0ccdac4326e589f4af203292b270",
+"index.html": "2a29e26a1131d43ae8cca0370a14fd2c",
+"/": "2a29e26a1131d43ae8cca0370a14fd2c",
+"main.dart.js": "73001ecb9fb2062475e90c26f8a26fac",
 "manifest.json": "4c4e1c2232bb11604884a88a545e40c6",
 "version.json": "ff8625bd1bd1163ace3beed1a0a5c6c5"
 };
